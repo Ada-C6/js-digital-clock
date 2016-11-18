@@ -8,9 +8,6 @@ $(document).ready( function() {
 var getTime = function(zones){
   $('.clock').empty();
   var now = new Date();
-  hours = now.getHours();
-  minutes = now.getMinutes();
-  seconds = now.getSeconds();
 
   var clocks = "";
 
