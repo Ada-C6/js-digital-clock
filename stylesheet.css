@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=VT323');
+
+.clock {
+  border: 2px solid darkblue;
+  border-radius: 5px;
+  text-align: center;
+  font-family: 'VT323', courier;
+  overflow: hidden;
+}
