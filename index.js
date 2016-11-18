@@ -2,11 +2,16 @@
 
 var timeNow = function() {
   var now = new Date();
+  var t = "AM";
   var h = now.getHours();
+  if (h > 12) {
+    h = h - 12;
+    t = "PM";
+  }
   var m = pad(now.getMinutes(), 2);
   var s = pad(now.getSeconds(), 2);
 
-  $( "#clock" ).html( "" + h + ":" + m + ":" + s + "" );
+  $( "#clock" ).html( "" + h + ":" + m + ":" + s + " " + t + "" );
 
   // // var oElem = document.getElementById("body");
   // var backgroundColor = backgroundColor == "red" ? "blue" : "red";
