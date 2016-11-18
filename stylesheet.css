@@ -1,9 +1,18 @@
 @import url('https://fonts.googleapis.com/css?family=VT323');
 
-.clock {
+/*.clockface {
   border: 2px solid darkblue;
   border-radius: 5px;
+  width: 300px;
   text-align: center;
   font-family: 'VT323', courier;
   overflow: hidden;
+}*/
+
+h1 {
+  padding: 2%;
+}
+
+.column {
+  text-align: center;
 }
