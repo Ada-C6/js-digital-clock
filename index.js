@@ -5,6 +5,10 @@ $(document).ready(function() {
 
   var time = function(){
     var rightNow = new Date(),
+        day = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"][rightNow.getDay()],
+        date = rightNow.getDate(),
+        month = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"][rightNow.getMonth()],
+        year = rightNow.getFullYear(),
         hour = rightNow.getHours(),
         minute = rightNow.getMinutes(),
         second = rightNow.getSeconds(),
@@ -13,6 +17,7 @@ $(document).ready(function() {
         standardSecond = second < 10 ? "0" + second : second,
         amPm = hour < 12 ? "AM":"PM";
     $('#clock').empty();
+    $('#clock').append("<p>" + day + "<br />" + month + " " + date + ", " + year + "</p>")
     $('#clock').append("<p>" + standardHour + ":" + standardMinute + ":" + standardSecond + " " + amPm + "</p>");
   };
 
