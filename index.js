@@ -22,13 +22,13 @@ var timeNow = function() {
   var b = Math.floor(Math.random() * 150);
   var color = "rgb(" + r + "," + g + "," + b + ")";
   $( "#clock" ).css( "color", color );
-  //
-  // // Random background color (any color)
-  // var r = Math.floor(Math.random() * 255);
-  // var g = Math.floor(Math.random() * 255);
-  // var b = Math.floor(Math.random() * 255);
-  // var color = "rgb(" + r + "," + g + "," + b + ")";
-  // $( "body" ).css( "background-color", color );
+
+  // Random background color (any color)
+  var r = Math.floor(Math.random() * 255);
+  var g = Math.floor(Math.random() * 255);
+  var b = Math.floor(Math.random() * 255);
+  var color = "rgb(" + r + "," + g + "," + b + ")";
+  $( "body" ).css( "background-color", color );
 
 
 
