@@ -1,1 +1,4 @@
-// Your code here
+
+$(document).ready(function(){
+  $('#clock').append("Hello!");
+});
