@@ -7,16 +7,15 @@ $(document).ready( function() {
 
 var getTime = function(zones){
   $('.clock').empty();
-  var now = new Date()
 
-  var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+  var now = new Date()
 
   //Use of moment from: http://stackoverflow.com/questions/10087819/convert-date-to-another-timezone-in-javascript
 
   for (var i = 0; i < zones.length; i++){
     var format = "h:mm:ss A <br> MMMM DD, YYYY";
-    var currentTime = new Date(moment(now, format).tz(zones[i][1]).format());
-    $('.clock').append("<div class=column><div class=callout><h3>" + zones[i][0] + "</h3><p>" + currentTime.getHours() + ":" + currentTime.getMinutes() + ":" + currentTime.getSeconds() + "<br>" + currentTime.getMonth() + "</p>");
+    var currentTime = moment(now, format).tz(zones[i][1]).format(format);
+    $('.clock').append("<div class=column><div class=callout><h3>" + zones[i][0] + "</h3><p>" + currentTime + "</p>");
   }
 
   $('.clock').append("</div>")
