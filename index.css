@@ -14,3 +14,10 @@ body {
     color: white;
     font-size: 100px;
 }
+
+button{
+    padding: 2%;
+}
+button{
+    font-size: 1em;
+}
