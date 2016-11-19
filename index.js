@@ -8,7 +8,7 @@ var getTime = function(){
 var suffix=''
 var civilianTime=function(hours){
 	var hours = getTime().getHours();
-	console.log(hours)
+	// console.log(hours)
 	if (hours > 12) {
 	    hours -= 12;
 	    suffix='pm'
@@ -26,9 +26,9 @@ var updateClock=function(){
 		var hours= civilianTime(getTime().getHours());
 	}else{
 		var hours= getTime().getHours();
-		console.log("hours:", hours)
+		// console.log("hours:", hours)
 	}
-	console.log("civvie:",civvie)
+	// console.log("civvie:",civvie)
 
 	var mins=getTime().getMinutes()
 	var secs=getTime().getSeconds()
@@ -38,7 +38,7 @@ var updateClock=function(){
 }
 console.log(civvie);
 var continueClock=function(){
-	console.log(civvie);
+	// console.log(civvie);
 	var everySec = setInterval(updateClock, 1000);
 }
 $(document).ready(continueClock());
