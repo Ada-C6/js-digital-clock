@@ -11,12 +11,13 @@ var civilianTime=function(hours){
 	// console.log(hours)
 	if (hours > 12) {
 	    hours -= 12;
-	    suffix='pm'
+	    suffix='pm';
 	} else if (hours === 0) {
 	   hours = 12;
+	   suffix='am';
 	   
 	} else{
-		suffix='am'
+		suffix='am';
 	}
 	return hours;
 }
