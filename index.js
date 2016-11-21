@@ -16,7 +16,6 @@ var civilianTime=function(hours){
 	   hours = 12; 
 	} else if (hours===12){	
 		suffix='pm';
-		console.log("hello");   
 	} else{
 		suffix='am';
 	}
@@ -41,7 +40,7 @@ var updateClock=function(){
 console.log(civvie);
 var continueClock=function(){
 	// console.log(civvie);
-	var everySec = setInterval(updateClock, 1000);
+	var everySec = setInterval(updateClock, 500);
 }
 $(document).ready(continueClock());
 
