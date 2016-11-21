@@ -1,6 +1,10 @@
 // Your code here
+$(document).ready(function() {
+   var intervalID = setInterval(myCallback, 500);
+});
 
- $(document).ready(function() {
+   var myCallback = function(){
+    $('#clock').empty();
    var currentTime = new Date();
 
    ///////// day ///////////
@@ -37,4 +41,4 @@
 
    $('#clock').append('<p>' + day + ", " + month + " " + date + ", " + year + '</p>' +
     '<p>' + hour + ":" + min + ":" + second + " " + am + '</p>');
-});
+  };
