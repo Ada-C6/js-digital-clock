@@ -13,9 +13,9 @@ var civilianTime=function(hours){
 	    hours -= 12;
 	    suffix='pm';
 	} else if (hours === 0) {
-	   hours = 12;
-	   suffix='pm';
-	   
+	   hours = 12; 
+	} else if (hours===12){	
+		suffix='pm';   
 	} else{
 		suffix='am';
 	}
