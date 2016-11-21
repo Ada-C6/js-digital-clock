@@ -11,7 +11,7 @@ var clock = function(){
 
   var timeOfDay = (cHours < 12)? 'AM' : 'Pm';
   cHours = ( cHours > 12)? cHours - 12 : cHours;
-  cHours = (currentHours === 0)? 12 : cHours;
+  cHours = (cHours === 0)? 12 : cHours;
   var cTimeString = cHours + ':' + cMinutes + ':' + cSeconds + ' ' + timeOfDay;
   $('#clock').html(cTimeString);
 };
@@ -27,5 +27,5 @@ var clock = function(){
 
 $(document).ready(function()
 {
-   setInterval('updateClock()', 1000);
+   setInterval('clock()', 1000);
 });
