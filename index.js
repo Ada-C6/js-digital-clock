@@ -5,7 +5,7 @@ $(document).ready(function() {
   function updateAndDisplay() {
     console.log('hi!');
     var dateTimeObj = new Date();
-    $('#clock').(dateTimeObj);
+    $('#clock').text(dateTimeObj);
   }
 
   var intervalID = window.setInterval(updateAndDisplay, 1000);
